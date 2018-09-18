@@ -40,5 +40,5 @@ class BloggerDetailView(generic.DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(BloggerDetailView, self).get_context_data(**kwargs)
-        context['blogs'] = Blog.objects.filter(author=self.kwargs['pk'])
+        context['blogs'] = Blog.objects.filter(author=self.kwargs['id'])
         return context

@@ -6,7 +6,7 @@
     <p><em>{{blog.date_of_birth }}</em></p>
 
     {% for blog in blogs %}
-    <p>{{ blog }}
+    <p><a href="{{ blog.get_absolute_url }}">{{ blog }}</a>
     </p>
     {% endfor %}
     {% endif %}
