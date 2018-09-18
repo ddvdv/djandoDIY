@@ -1,0 +1,9 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    {% if blog %}
+    <h3>{{blog.title}}</h3>
+    <p><em>by {{blog.author }}</em></p>
+    <p>{{ blog.content }}</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %} 
+ 
+{% block content %} 
+  <p>Welcome to my DIY blog, supported by <em>All by mi self</em>!</p> 
+  <h2>this site in numbers</h2> 
+  <p>The library has the following record counts:</p> 
+  <ul> 
+    <li><strong>Posts:</strong> {{ num_blogs }}</li> 
+    <li><strong>Bloggers:</strong> {{num_bloggers }}</li> 
+  </ul> 
+{% endblock %} 
