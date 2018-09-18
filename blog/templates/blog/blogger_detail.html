@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    {% if blogger %}
+    <h3>{{blogger.last_name}} {{ blogger.first_name}}</h3>
+    <p><em>{{blog.date_of_birth }}</em></p>
+
+    {% for blog in blogs %}
+    <p>{{ blog }}
+    </p>
+    {% endfor %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Bloggers list</h1>
+    {% if users_list %}
+    <ul>
+        {% for bloggers in bloggers_list %}
+        <li>{{ bloggers }} </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+{% endblock %}
